@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="shortcut icon" href="IMG/img_icon.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ===================> LINK CSS -->
+        <link rel="stylesheet" href="CSS/style.css">   
+
+        <title>Conversor de Moedas</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="page-title">
+                Conversor de Moedas
+              </h1>
+              <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+  
+              <a href="https://alura.com.br/" target="_blank">
+                  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+      
+              </a>
+        </header>
+
+        <main class="main">
+            <section class="menu">
+                <div onclick="btn_cm_op()">
+                    <button class="btn"><i class="animation"></i>Conversor de Moedas<i class="animation"></i></button>
+                </div>
+
+                <div onclick="btn_ct_op()"> 
+                    <button class="btn"><i class="animation"></i>Conversor de Temperatura<i class="animation"></i></button>
+                </div>
+
+                <div onclick="btn_cd_op()"> 
+                    <button class="btn"><i class="animation"></i>Conversor de Distancia<i class="animation"></i></button>
+                </div>
+            </section>
+
+<!-- ======================================================================================= Conversor Moeda -->   
+
+            <section class="container_money_converter">
+                <div class="title_option">
+                    <p>Conversor Moedas</p>
+                </div>
+
+                <form id ="form">
+                    <input type="text" name="" id="input_name1" placeholder="Digite seu Nome" required>
+
+                    <input type="number" name="" id="input_value1" placeholder="Digite um Valor $" required> 
+
+                    <div class="radio-inputs">
+                        <label class="radio">
+                          <input type="radio" name="radio" checked="" value="d">
+                          <span class="name">Dolar</span>
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="radio" value="bc">
+                          <span class="name">Bitcoin</span>
+                        </label>
+                    </div>
+
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Converter</span>
+                        </span>
+                    </button>
+                </form>
+            </section>
+
+<!-- ======================================================================================= Conversor Temp -->            
+
+            <section class="container_temp_converter">
+                <div class="title_option">
+                    <p>Conversor Temperatura</p>
+                </div>
+
+                <form id ="form2">
+                    <input type="text" name="" id="input_name2" placeholder="Digite seu Nome" required>
+
+                    <input type="number" name="" id="input_value2" placeholder="Digite um Valor em graus °C" required> 
+
+                    <div class="radio-inputs">
+                        <label class="radio">
+                          <input type="radio" name="radio2" checked="">
+                          <span class="name">Fahrenheit</span>
+                        </label>
+
+                        <label class="radio">
+                          <input type="radio" name="radio2">
+                          <span class="name">Kelvin </span>
+                        </label>
+                    </div>
+
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Converter</span>
+                        </span>
+                    </button>
+                </form>
+            </section>
+
+<!-- ======================================================================================= Conversor Dista-->
+
+            <section class="container_distance_converter">
+                <div class="title_option">
+                    <p>Conversor Distancia</p>
+                </div>
+
+                <form id="form3">
+                    <input type="text" name="" id="input_name3" placeholder="Digite seu Nome" required>
+
+                    <input type="number" name="" id="input_value3" placeholder="Digite um Valor" required> 
+                
+                    <button class="button">
+                        <span class="button_lg">
+                            <span class="button_sl"></span>
+                            <span class="button_text">Converter</span>
+                        </span>
+                    </button>
+                </form>    
+            </section>
+        </main>
+
+    </body>
+
+            <!-- ===================> LINK Script JS -->
+            <script src="JS/script.js"></script>
+</html>
