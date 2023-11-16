@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 1em;
+    background: #424242;
+}
+
+header{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title{
+    font-size: 2.5em;
+    margin: 0 0 .1em;
+}
+  
+  .page-logo{
+    width: 15em;
+}
+  
+.alura-logo{
+    width: 10em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+main{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    background: rgb(17, 17, 17);
+}
+
+.list_project{
+    width: 20%;
+    height: 100%;
+    background: url('https://i.redd.it/6l82oj8s3bp21.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .8);
+    z-index: 1;
+}
+
+.background{
+    width: 80%;
+    height: 100%;
+    padding: 1em;
+    background: url('https://w0.peakpx.com/wallpaper/1021/487/HD-wallpaper-technology-code-programming-programmer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.background h1{
+    text-align: center;
+    font-size: 2em;
+}
