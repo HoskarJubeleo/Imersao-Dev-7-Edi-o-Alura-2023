@@ -21,14 +21,15 @@ const btn_enviar = document.querySelector("#btn_enviar");
 let max = 1000;
 let min = 1;
 let numeroSecreto  = parseInt(Math.random() * (max - min) + min);
-let c = 10;
+let c = 5;
 let numImpPar = (numeroSecreto%2);
-
+tentativas_game.innerHTML = c; 
 /* ==========================> INTERACAO CHAT */
 
     btn_enviar.addEventListener("click", function(){
         event.preventDefault(); 
-        tentativas_game.innerHTML = c; 
+    
+        c--
         
         if(input_text.value != ''){
             var newBoxMensage = document.createElement("div");
@@ -64,14 +65,14 @@ let numImpPar = (numeroSecreto%2);
         }
     
         clear();
-        --c
-
-        if(c == 0){
+        tentativas_game.innerHTML = c; 
+        if(c < 0){
+            tentativas_game.innerHTML = 0;
             alert('VOCE PERDEU! :(')
             reload();
         }
+        
     });
-
 
 /* ==========================> SCRIPT PAINEL */
 
