@@ -34,7 +34,7 @@ btn_search.addEventListener("click", function(){
     }
  */
 
-    filmes_link_trailer.innerHTML = filmes_link_trailer.innerHTML = '<a href=' + input_trailer.value + '> <img class="img" src=' + input_nome.value + '>';
+    filmes_link_trailer.innerHTML = filmes_link_trailer.innerHTML = '<a href=' + input_trailer.value + ' target="_blank" rel="noopener noreferrer"> <img class="img" src=' + input_nome.value + '>';
     clear();
 
 
