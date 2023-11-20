@@ -9,7 +9,7 @@
     font-size: 1.1em;
 }
 
-.menu div{
+.menu div, .a_github{
     width: 100%;
     display: flex;
     justify-content: center;
