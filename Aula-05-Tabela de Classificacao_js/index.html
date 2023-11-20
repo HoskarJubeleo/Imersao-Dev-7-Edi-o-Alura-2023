@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="IMG/img_icon.png" type="image/x-icon">
+        <!-- ===================> LINK CSS -->
+        <link rel="stylesheet" href="CSS/style.css">   
+
+        <!-- ===================> LINK BOOTSTRAP ICON -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <title>Tabela de Classificacao</title>
+    </head>
+    <body onload="attTabela()">
+        <header class="header">
+            <h1 class="page-title">
+                Tabela de Classificacao
+            </h1>
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+  
+            <a href="https://alura.com.br/" target="_blank">
+                <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+            </a>
+        </header>
+        <main>
+            <section class="criar_tabela">
+                <form class="form">
+                    <hr>
+                        <input type="text" id="input_player1" placeholder="Digite o Nome do 1° Player"   autofocus autocomplete="off">
+                        <input type="text" id="input_player2" placeholder="Digite o Nome do 2° Player"   autocomplete="off">
+                        <div class="button-borders">
+                            <button class="primary-button" id="btn_player"> Next
+                            </button>
+                        </div>
+                    <hr>
+                </form>
+            </section>
+
+            <section class="table_pontos">
+
+                <div>
+                    <div class="button-borders">
+                        <button class="primary-button" id="zerar_placar"> New Game
+                        </button>
+                      </div>
+                </div>
+
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Victory</th>
+                        <th>Draw</th>
+                        <th>Defeat</th>
+                        <th>Points</th>
+                        <th colspan="3" class="group_btn">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabelaJogadores">
+                        <!-- TEBELA CARREGADa PELO JS -->
+                    </tbody>
+                  </table>
+
+            </section>
+        </main>
+        
+        <!-- ===================> LINK JS -->
+        <script src="JS/script.js" defer></script>  
+
+</body>
+</html>
