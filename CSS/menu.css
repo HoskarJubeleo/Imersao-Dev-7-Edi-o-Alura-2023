@@ -9,7 +9,7 @@
     font-size: 1.1em;
 }
 
-.menu div, .a_github{
+.menu div{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,6 +17,10 @@
     border-radius: 10px;
     background: #000;
     font-weight: 700;
+}
+
+.a_github{
+    width: 100%;
 }
 
 .github{
