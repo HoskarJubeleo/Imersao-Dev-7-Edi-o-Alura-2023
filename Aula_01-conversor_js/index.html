@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <link rel="shortcut icon" href="IMG/img_icon.png" type="image/x-icon">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- ===================> LINK CSS -->
-        <link rel="stylesheet" href="CSS/style.css">   
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" href="IMG/img_icon.png" type="image/x-icon">
+            <!-- ===================> LINK CSS -->
+            <link rel="stylesheet" href="CSS/style.css">   
 
-        <title>Conversor de Moedas</title>
-    </head>
-    <body>
-        <header class="header">
-            <h1 class="page-title">
-                Conversor de Moedas
-              </h1>
-              <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-  
-              <a href="https://alura.com.br/" target="_blank">
-                  <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-      
-              </a>
-        </header>
+            <title>Conversor de Moedas</title>
+        </head>
+        <body>
+            <header class="header">
+                <h1 class="page-title">
+                    Conversor de Moedas
+                </h1>
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    
+                <a href="https://alura.com.br/" target="_blank">
+                    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        
+                </a>
+
+            </header>
 
         <main class="main">
             <section class="menu">
@@ -44,10 +45,10 @@
                     <p>Conversor Moedas</p>
                 </div>
 
-                <form id ="form">
-                    <input type="text" name="" id="input_name1" placeholder="Digite seu Nome" required>
+                <form>
+                    <input type="text" name="" id="input_name" class="inp_name_money"  placeholder="Digite seu Nome" required>
 
-                    <input type="number" name="" id="input_value1" placeholder="Digite um Valor $" required> 
+                    <input type="number" name="" id="input_value" class="inp_value_money" placeholder="Digite um Valor $" required> 
 
                     <div class="radio-inputs">
                         <label class="radio">
@@ -60,12 +61,13 @@
                         </label>
                     </div>
 
-                    <button class="button">
+                    <button class="button" id="btn_money">
                         <span class="button_lg">
                             <span class="button_sl"></span>
                             <span class="button_text">Converter</span>
                         </span>
                     </button>
+                    <p>RESULT <span class="result"></span></p>
                 </form>
             </section>
 
@@ -76,10 +78,10 @@
                     <p>Conversor Temperatura</p>
                 </div>
 
-                <form id ="form2">
-                    <input type="text" name="" id="input_name2" placeholder="Digite seu Nome" required>
+                <form>
+                    <input type="text" name="" id="input_name" class="inp_name_temp"  placeholder="Digite seu Nome" required>
 
-                    <input type="number" name="" id="input_value2" placeholder="Digite um Valor em graus °C" required> 
+                    <input type="number" name="" id="input_value" class="inp_value_temp" placeholder="Digite um Valor em graus °C" required> 
 
                     <div class="radio-inputs">
                         <label class="radio">
@@ -93,12 +95,13 @@
                         </label>
                     </div>
 
-                    <button class="button">
+                    <button class="button" id="btn_temp">
                         <span class="button_lg">
                             <span class="button_sl"></span>
                             <span class="button_text">Converter</span>
                         </span>
                     </button>
+                    <p>RESULT <span class="result2"></span></p>
                 </form>
             </section>
 
@@ -109,17 +112,18 @@
                     <p>Conversor Distancia</p>
                 </div>
 
-                <form id="form3">
-                    <input type="text" name="" id="input_name3" placeholder="Digite seu Nome" required>
+                <form>
+                    <input type="text" name="" id="input_name" class="inp_name_dist" placeholder="Digite seu Nome" required>
 
-                    <input type="number" name="" id="input_value3" placeholder="Digite um Valor" required> 
+                    <input type="number" name="" id="input_value" class="inp_value_dist" placeholder="Digite um Valor" required> 
                 
-                    <button class="button">
+                    <button class="button" id="btn_distance">
                         <span class="button_lg">
                             <span class="button_sl"></span>
                             <span class="button_text">Converter</span>
                         </span>
                     </button>
+                    <p>RESULT <span class="result3"></span></p>
                 </form>    
             </section>
         </main>
